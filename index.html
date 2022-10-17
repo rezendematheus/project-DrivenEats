@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
 </head>
-<body>
+<body class="body">
+    <div class="blurry not-display"></div>
     <div class="topbar">
         <h1>DrivenEats</h1>
         <p>Sua comida em 6 minutos</p>
@@ -20,7 +21,7 @@
         <div class="list">
             <h1>Primeiro, seu prato</h1>
             <!-- REFEIÇÕES AQUI-->
-            <div class="food">
+            <div class="food meals">
                     <div onclick="seleciona(this)" class="option">
                             <div>
                                 <svg class="check-icon not-display" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +30,7 @@
                             </div>
                         <img src="/home/matheus/projetos/driveneats/img/frango_yin_yang 1.svg" alt="">
                         <div class="caixatexto">
-                            <h2>Frango Yin Yang</h2>
+                            <h2 class = "nome">Frango Yin Yang</h2>
                             <h3>Um pouco de batata, um pouco de salada</h3>
                             <p>R$<span class="custo">14,90</span></p>
                         </div>
@@ -42,7 +43,7 @@
                         </div>
                         <img src="/home/matheus/projetos/driveneats/img/bife-e-fritas.jpg" alt="">
                         <div class="caixatexto">
-                            <h2>Bife e fritas</h2>
+                            <h2 class = "nome">Bife e fritas</h2>
                             <h3>Um bife e um fritas</h3>
                             <p>R$<span class="custo">17,50</span></p>
                         </div>
@@ -55,7 +56,7 @@
                         </div>
                     <img src="/home/matheus/projetos/driveneats/img/carne-panela.jpg" alt="">
                     <div class="caixatexto">
-                        <h2>Carninha cozida</h2>
+                        <h2 class = "nome">Carninha cozida</h2>
                         <h3>Comida da mamãe</h3>
                         <p>R$<span class="custo">16,50</span></p>
                     </div>
@@ -68,7 +69,7 @@
                         </div>
                         <img src="/home/matheus/projetos/driveneats/img/feijoada.jpeg" alt="">
                         <div class="caixatexto">
-                            <h2>Feijoada</h2>
+                            <h2 class = "nome">Feijoada</h2>
                             <h3>Eno de brinde</h3>
                             <p>R$<span class="custo">19,50</span></p>
                         </div>
@@ -78,7 +79,7 @@
         <div class="list">
             <h1>Agora, sua bebida</h1>
             <!-- BEBIDAS AQUI-->
-            <div class="food">
+            <div class="food drinks">
                 <div onclick="seleciona(this)" class="option">
                     <div>
                         <svg class="check-icon not-display" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +88,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/coquinha_gelada 1.svg" alt="">
                     <div class="caixatexto">
-                        <h2>Coquinha gelada</h2>
+                        <h2 class = "nome">Coquinha gelada</h2>
                         <h3>Lata 350ml</h3>
                         <p>R$<span class="custo">4,90</span></p>
                     </div>
@@ -101,7 +102,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/coquinha-zero.jpg" alt="">
                     <div class="caixatexto">
-                        <h2>Coquinha zero</h2>
+                        <h2 class = "nome">Coquinha zero</h2>
                         <h3>Lata 350ml</h3>
                         <p>R$<span class="custo">4,90</span></p>
                     </div>
@@ -115,7 +116,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/guarana-jesus.jpeg" alt="">
                     <div class="caixatexto">
-                        <h2>Guaraná Jesus</h2>
+                        <h2 class = "nome">Guaraná Jesus</h2>
                         <h3>Lata 350ml</h3>
                         <p>R$<span class="custo">6,90</span></p>
                     </div>
@@ -130,7 +131,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/heineken.jpg" alt="">
                     <div class="caixatexto">
-                        <h2>Heineken</h2>
+                        <h2 class = "nome">Heineken</h2>
                         <h3>Lata 350ml</h3>
                         <p>R$<span class="custo">9,90</span></p>
                     </div>
@@ -140,7 +141,7 @@
         <div class="list">
             <h1>Por fim, sua sobremesa</h1>
             <!-- SOBREMESAS AQUI-->
-            <div class="food">
+            <div class="food dishes">
                 <div onclick="seleciona(this)" class="option">
                     <div>
                         <svg class="check-icon not-display" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +150,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/pudim 1.svg" alt="">
                     <div class="caixatexto">
-                        <h2>Pudim</h2>
+                        <h2 class = "nome">Pudim</h2>
                         <h3>Apenas Pudim</h3>
                         <p>R$<span class="custo">7,90</span></p>
                     </div>
@@ -162,7 +163,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/mousse-maracuja.jpeg" alt="">
                     <div class="caixatexto">
-                        <h2>Mousse de maracujá</h2>
+                        <h2 class = "nome">Mousse de maracujá</h2>
                         <h3>Especialidade da casa</h3>
                         <p>R$<span class="custo">9,90</span></p>
                     </div>
@@ -175,7 +176,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/casquinha.jpg" alt="">
                     <div class="caixatexto">
-                        <h2>Casquinha</h2>
+                        <h2 class = "nome">Casquinha</h2>
                         <h3>Geladinha</h3>
                         <p>R$<span class="custo">3,90</span></p>
                     </div>
@@ -188,7 +189,7 @@
                     </div>
                     <img src="/home/matheus/projetos/driveneats/img/piece-cake.jpg" alt="">
                     <div class="caixatexto">
-                        <h2>Pedaço de bolo</h2>
+                        <h2 class = "nome">Pedaço de bolo</h2>
                         <h3>Vários sabores</h3>
                         <p>R$<span class="custo">5,90</span></p>
                     </div>
@@ -196,11 +197,35 @@
             </div>
         </div>
     </div>
-    <div class="bottombar">
+    <!--FINALIZAÇÃO DO PEDIDO AQUI-->
+    <div onclick="continuar()" class="bottombar">
         <button class="botao">
             <p>Selecione os três itens para fechar o pedido</p>
         </button>
     </div>
+    <div class="finalizar-pedido not-display">
+        <p>Confirme seu pedido</p>
+        <div class="resumo">
+          <div>
+            <p class="escolha1">a</p>
+            <p class="custo1">1</p>
+          </div>
+          <div>
+            <p class="escolha2">a</p>
+            <p class="custo2">0</p>
+          </div>
+          <div>
+            <p class="escolha3">a</p>
+            <p class="custo3">0</p>
+          </div>
+          <div>
+            <p>Total</p>
+            <p class="total">0</p>
+        </div>
+        </div>
+        <button class="confirma">Tudo certo, pode pedir!</button>
+        <button onclick="cancelar()" class="cancela">Cancelar</button>
+      </div>
     <script src="script.js"></script>
 </body>
 </html>

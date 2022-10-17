@@ -1,3 +1,7 @@
+body{
+    position: relative;
+    overflow-x: hidden;
+}
 img{
     width: 144px;
     height: 87px;
@@ -18,18 +22,31 @@ img{
     justify-content: center;
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);    
-    z-index: 10000;
+    z-index: 1000;
+    overflow-x: hidden;
 }
 .pedido {
     background-color: #e5e5e5;
-    padding-top: 95px;
+    margin-top: 95px;
     height: auto;
-    padding-bottom: 110px;
+    margin-bottom: 110px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow-x: hidden;
 }
 .list {
     padding-top: 28px;
     width: 100%;
     height: auto;
+    overflow-x: hidden;
+    
+}
+.food::-webkit-scrollbar{
+    display: none;
+}
+.food{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .caixatexto {
     height: 93px;
@@ -50,10 +67,11 @@ img{
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    z-index: 10000;
+    z-index: 1000;
 }
 .newbottombar{
-    color:#32b72f;
+    background-color:#32b72f;
+    cursor: pointer;
 }
 .botao{
     display: flex;
@@ -61,9 +79,11 @@ img{
     align-items: center;
     width: 364px;
     height: 61px;
-    color: #CBCBCB;
+    color: #FFFFFF;
     border-radius: 50px;
     border-style: none;
+    font-size: 20px;
+
 }
 .food{
     height: 216px;
@@ -94,9 +114,7 @@ div{
 .select{
     box-shadow: inset 0px 0px 0px 5px #32b72f;
 }
-.not-display{
-    display: none;
-}
+
 .check-icon{
     position: absolute;
     bottom: 16px;
@@ -148,4 +166,62 @@ p{
     font-weight: 400;
     color: #000000;
     font-size: 16px;
+}
+.finalizar-pedido {
+    width: 377px;
+    height: 353px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #50d074;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000000;
+    color: #ffffff;
+    font-style: "Roboto";
+  }
+.finalizar-pedido :nth-child(3) {
+    color: #50d074;
+}
+.resumo {
+    width: 326px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.resumo div {
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.confirma {
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+    color: inherit;
+}
+.cancela {
+    color: #ffffff;
+    border: none;
+    background-color: inherit;
+    width: 100%;
+}
+.blurry {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10000;
+}
+.not-display{
+    display: none;
+}
+.scroll-block{
+    overflow-y: hidden;
 }
