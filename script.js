@@ -6,6 +6,7 @@ let dishe = "";
 let mealcost = 0;
 let drinkcost = 0;
 let dishecost = 0;
+let mensagem1;
 function seleciona(elemento){
     const pai = elemento.parentNode
         if(pai.querySelector(".select") !== null){
@@ -54,6 +55,7 @@ function continuar(){
         finish_screen.classList.remove("not-display");
         blurry.classList.remove("not-display");
         document.querySelector(".body").classList.add("scroll-block");
+        mensagem1 =  `Olá, gostaria de fazer o pedido:\n- Prato: ${meal}\n- Bebida: ${drink}\n- Sobremesa: ${dishe}\nTotal: R$ ${(custototal.toFixed(1)).replace(",",".")}\n`;
     }
 }
 function cancelar(){
@@ -77,4 +79,13 @@ function categoriza(elemento){
         dishe = (elemento.querySelector(".nome")).innerHTML; 
         dishecost=(elemento.querySelector(".custo")).innerHTML;
     }
+
+}
+
+function mensagem(){
+    const nome = prompt("Insira seu nome:");
+    const endereco = prompt("Insira seu endereço:");
+    mensagem += `\nNome: ${nome}\nEndereço: ${endereco}`;
+    const link = "https://wa.me/5511987288261?text="+encodeURIComponent(mensagem1);
+    window.open(link,"_self");
 }
